@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "feeds": [
+    {
+      "name": "us-cert-alerts",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "priority": "high",
+      "category": "government",
+      "description": "CISA Cybersecurity Advisories"
+    },
+    {
+      "name": "us-cert-current",
+      "url": "https://www.cisa.gov/uscert/ncas/current-activity.xml",
+      "priority": "high",
+      "category": "government",
+      "description": "CISA Current Activity"
+    },
+    {
+      "name": "bleeping-computer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "priority": "medium",
+      "category": "news",
+      "description": "BleepingComputer Security News"
+    },
+    {
+      "name": "the-hacker-news",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "priority": "medium",
+      "category": "news",
+      "description": "The Hacker News"
+    },
+    {
+      "name": "threatpost",
+      "url": "https://threatpost.com/feed/",
+      "priority": "medium",
+      "category": "news",
+      "description": "Threatpost Security News"
+    },
+    {
+      "name": "krebs-on-security",
+      "url": "https://krebsonsecurity.com/feed/",
+      "priority": "medium",
+      "category": "news",
+      "description": "Krebs on Security"
+    },
+    {
+      "name": "sans-isc",
+      "url": "https://isc.sans.edu/rssfeed.xml",
+      "priority": "high",
+      "category": "research",
+      "description": "SANS Internet Storm Center"
+    },
+    {
+      "name": "nist-nvd",
+      "url": "https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml",
+      "priority": "high",
+      "category": "government",
+      "description": "NIST National Vulnerability Database"
+    },
+    {
+      "name": "malwarebytes-labs",
+      "url": "https://blog.malwarebytes.com/feed/",
+      "priority": "medium",
+      "category": "vendor",
+      "description": "Malwarebytes Labs"
+    },
+    {
+      "name": "recorded-future",
+      "url": "https://www.recordedfuture.com/feed",
+      "priority": "medium",
+      "category": "vendor",
+      "description": "Recorded Future Blog"
+    }
+  ],
+  "settings": {
+    "poll_interval_minutes": 60,
+    "max_items_per_feed": 20,
+    "fetch_timeout_seconds": 30,
+    "max_concurrent_fetches": 5,
+    "retry_attempts": 2,
+    "retry_delay_seconds": 5
+  },
+  "filters": {
+    "min_title_length": 10,
+    "max_age_days": 30,
+    "exclude_keywords": [],
+    "require_keywords": []
+  }
+}
